@@ -33,39 +33,46 @@ from rasa_sdk.events import SlotSet
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.forms import FormAction
 
-from service.action import get_text_weather_date
-from service.normalization import text_to_date, date_to_daynum
+from service.wuhan import get_detail_info
 
-
-class ActionReportWeather(Action):
+class ActionReportDisease(Action):
     def __init__(self):
        pass 
 
     def name(self) -> Text:
-        return "action_report_weather"
+        return "action_report_disease"
 
     def run(self,
             dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        # print('tracker is ,', tracker)
+        
         address = tracker.get_slot('address')
-        date_time = tracker.get_slot('date-time')
+        try:
+            disease_data = get_detail_info(address)
+        except Exception as e:
+            disease_data = str(e) + ' and your input is run. pls input 地点。例如北京今天的情况'
 
-        date_object = text_to_date(date_time)
-        day_num = date_to_daynum(date_time)
-        # print(address, day_num, date_object)
-    
+        return [SlotSet("matches", "{}".format(disease_data))]
 
-        if not date_time:  # parse date_time failed
-            msg = "暂不支持查询 {} 的天气".format([address, date_time])
-            return [SlotSet("matches", msg)]
-            # print(msg)
-            # dispatcher.utter_message(msg)
-        else:
-           try:
-                weather_data = get_text_weather_date(address, date_to_daynum, date_object)
-            except Exception as e:
-                weather_data = str(e) + ' and your input is run. pls input 地点与时间。例如北京今天的天气'
 
-            return [SlotSet("matches", "{}".format(weather_data))]
+class ActionGeneralReportDisease(Action):
+    def __init__(self):
+       pass 
+
+    def name(self) -> Text:
+        return "action_report_general_disease"
+
+    def run(self,
+            dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        disease_data = get_detail_info('general')
+       # 
+       # try:
+       #     disease_data = get_detail_info()
+       # except Exception as e:
+       #     disease_data = str(e) + ' and your input is run. pls input 地点。例如北京今天的情况'
+
+        return [SlotSet("matches", "{}".format(disease_data))]
+
