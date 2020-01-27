@@ -53,7 +53,7 @@
 - 你到底是谁
 
 <!-- below is weather stuff -->
-## intent:diease
+## intent:disease
 - 疫情情况
 - 疫情
 - 现在的疫情如何
@@ -66,7 +66,7 @@
 - 我应该做什么防护
 - 我有什么需要注意的？
 
-## intent:diease_address
+## intent:disease_address
 - 告诉我在[广州](address)怎么样
 - 告诉我在[广州](address)
 - 在[辽宁](address)呢

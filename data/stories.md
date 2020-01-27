@@ -2,8 +2,8 @@
 * greet
   - utter_greet
 
-## general diease 
-* diease
+## general disease 
+* disease
   - utter_working_on_it
   - action_report_general_disease
   - utter_bot_ending
@@ -11,19 +11,19 @@
 ## simple path
 * disease_address{"address": "上海"}
   - utter_working_on_it
-  - action_report_weather
+  - action_report_disease
   - utter_report_disease
 
 ## bad mood
 * mood_unhappy
   - utter_help_heppier
 
-## greet > Diease > address path
+## greet > Disease > address path
 * greet
   - utter_greet
-* weather_address{"address": "上海"}
+* disease_address{"address": "上海"}
   - utter_working_on_it
-  - action_report_weather
+  - action_report_disease
   - utter_report_disease
 
 ## say goodbye

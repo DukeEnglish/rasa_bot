@@ -8,17 +8,21 @@ flag=True
 def init_data():
     f= json.load(open('dingxiangyuan.json'))
     for i in f['data']['getAreaStat']:
-        data_store[i['provinceName']] = defaultdict(str)
-        data_store[i['provinceName']]['确诊']=i['confirmedCount']
-        data_store[i['provinceName']]['疑似']=i['suspectedCount']
-        data_store[i['provinceName']]['治愈']=i['curedCount']
-        data_store[i['provinceName']]['死亡']=i['deadCount']
+        adress = i['provinceName'].replace('市','')
+        adress = adress.replace('省','')
+        data_store[adress] = defaultdict(str)
+        data_store[adress]['确诊']=i['confirmedCount']
+        data_store[adress]['疑似']=i['suspectedCount']
+        data_store[adress]['治愈']=i['curedCount']
+        data_store[adress]['死亡']=i['deadCount']
         for j in i['cities']:
-            data_store[j['cityName']] = defaultdict(str)
-            data_store[j['cityName']]['确诊']=j['confirmedCount']
-            data_store[j['cityName']]['疑似']=j['suspectedCount']
-            data_store[j['cityName']]['治愈']=j['curedCount']
-            data_store[j['cityName']]['死亡']=j['deadCount']
+            adress = i['cityName'].replace('市','')
+            adress = adress.replace('省','')
+            data_store[adress] = defaultdict(str)
+            data_store[adress]['确诊']=j['confirmedCount']
+            data_store[adress]['疑似']=j['suspectedCount']
+            data_store[adress]['治愈']=j['curedCount']
+            data_store[adress]['死亡']=j['deadCount']
     
     data_store['general']= f['data']['getStatisticsService']['countRemark']
     return data_store

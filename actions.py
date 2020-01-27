@@ -47,7 +47,12 @@ class ActionReportDisease(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
         
-        address = tracker.get_slot('address')
+        address = tracker.get_slot('address').replace('市', '')
+        address = address.replace('省', '')
+        if not address:
+          disease_data = get_detail_info('general')
+          return [SlotSet("matches", "{}。如果想了解具体信息，请输入具体地址".format(disease_data))]
+
         try:
             disease_data = get_detail_info(address)
         except Exception as e:
