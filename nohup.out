@@ -1,0 +1,382 @@
+2020-01-28 02:05:27 INFO     root  - Starting Rasa server on http://localhost:5005
+2020-01-28 02:05:33 INFO     absl  - Entry Point [tensor2tensor.envs.tic_tac_toe_env:TicTacToeEnv] registered with id [T2TEnv-TicTacToeEnv-v0]
+2020-01-28 02:05:38 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+2020-01-28 02:05:38 INFO     rasa_sdk.executor  - Registered function for 'action_report_disease'.
+2020-01-28 02:05:38 INFO     rasa_sdk.executor  - Registered function for 'action_report_general_disease'.
+2020-01-28 02:05:38 INFO     rasa_sdk.endpoint  - Action endpoint is up and running on http ('0.0.0.0', 5055)
+2020-01-28 02:05:39 INFO     rasa.nlu.components  - Added 'MitieNLP' to component cache. Key 'MitieNLP-/home/ljy/wechat/rasa_bot/total_word_feature_extractor.dat'.
+2020-01-28 02:05:39.352998: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: UNKNOWN ERROR (303)
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 1.245 seconds.
+Prefix dict has been built succesfully.
+2020-01-28 02:17:10 INFO     root  - Starting Rasa server on http://localhost:5005
+2020-01-28 02:17:15 INFO     absl  - Entry Point [tensor2tensor.envs.tic_tac_toe_env:TicTacToeEnv] registered with id [T2TEnv-TicTacToeEnv-v0]
+2020-01-28 02:17:21 INFO     rasa.nlu.components  - Added 'MitieNLP' to component cache. Key 'MitieNLP-/home/ljy/wechat/rasa_bot/total_word_feature_extractor.dat'.
+2020-01-28 02:17:21.555065: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: UNKNOWN ERROR (303)
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 1.043 seconds.
+Prefix dict has been built succesfully.
+2020-01-28 02:17:30 ERROR    rasa.core.actions.action  - Failed to run custom action 'action_report_disease'. Couldn't connect to the server at 'http://localhost:5055/webhook'. Is the server running? Error: Cannot connect to host localhost:5055 ssl:default [Cannot assign requested address]
+2020-01-28 02:17:30 ERROR    rasa.core.processor  - Encountered an exception while running action 'action_report_disease'. Bot will continue, but the actions events are lost. Please check the logs of your action server for more information.
+Traceback (most recent call last):
+  File "/home/ljy/miniconda3/envs/ljy/bin/rasa", line 5, in <module>
+    from rasa.__main__ import main
+  File "/home/ljy/miniconda3/envs/ljy/lib/python3.6/site-packages/rasa/__init__.py", line 8, in <module>
+    from rasa.run import run
+  File "/home/ljy/miniconda3/envs/ljy/lib/python3.6/site-packages/rasa/run.py", line 7, in <module>
+    from rasa.core.lock_store import LockStore
+  File "/home/ljy/miniconda3/envs/ljy/lib/python3.6/site-packages/rasa/core/__init__.py", line 5, in <module>
+    from rasa.core.train import train
+  File "/home/ljy/miniconda3/envs/ljy/lib/python3.6/site-packages/rasa/core/train.py", line 10, in <module>
+    from rasa.core.domain import Domain
+  File "/home/ljy/miniconda3/envs/ljy/lib/python3.6/site-packages/rasa/core/domain.py", line 9, in <module>
+    import rasa.utils.common as common_utils
+  File "/home/ljy/miniconda3/envs/ljy/lib/python3.6/site-packages/rasa/utils/common.py", line 7, in <module>
+    import rasa.core.utils
+  File "/home/ljy/miniconda3/envs/ljy/lib/python3.6/site-packages/rasa/core/utils.py", line 35, in <module>
+    from rasa.core.lock_store import LockStore, RedisLockStore
+  File "/home/ljy/miniconda3/envs/ljy/lib/python3.6/site-packages/rasa/core/lock_store.py", line 10, in <module>
+    from rasa.core.lock import TicketLock, NO_TICKET_ISSUED
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 951, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 894, in _find_spec
+  File "<frozen importlib._bootstrap_external>", line 1157, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1129, in _get_spec
+  File "<frozen importlib._bootstrap_external>", line 1248, in find_spec
+KeyboardInterrupt
+2020-01-28 02:17:54 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+2020-01-28 02:17:54 INFO     rasa_sdk.executor  - Registered function for 'action_report_disease'.
+2020-01-28 02:17:54 INFO     rasa_sdk.executor  - Registered function for 'action_report_general_disease'.
+2020-01-28 02:17:54 INFO     rasa_sdk.endpoint  - Action endpoint is up and running on http ('0.0.0.0', 5055)
+2020-01-28 02:28:56 INFO     root  - Starting Rasa server on http://localhost:5005
+2020-01-28 02:29:01 INFO     absl  - Entry Point [tensor2tensor.envs.tic_tac_toe_env:TicTacToeEnv] registered with id [T2TEnv-TicTacToeEnv-v0]
+2020-01-28 02:29:08 INFO     rasa.nlu.components  - Added 'MitieNLP' to component cache. Key 'MitieNLP-/home/ljy/wechat/rasa_bot/total_word_feature_extractor.dat'.
+2020-01-28 02:29:08.414830: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: UNKNOWN ERROR (303)
+Building prefix dict from the default dictionary ...
+Loading model from cache /tmp/jieba.cache
+Loading model cost 0.945 seconds.
+Prefix dict has been built succesfully.
+2020-01-28 02:30:44 INFO     rasa_sdk.endpoint  - Starting action endpoint server...
+2020-01-28 02:30:44 INFO     rasa_sdk.executor  - Registered function for 'action_report_disease'.
+2020-01-28 02:30:44 INFO     rasa_sdk.executor  - Registered function for 'action_report_general_disease'.
+2020-01-28 02:30:44 INFO     rasa_sdk.endpoint  - Action endpoint is up and running on http ('0.0.0.0', 5055)
+127.0.0.1 - - [2020-01-28 02:30:57] "POST /webhook HTTP/1.1" 200 438 0.007513
+127.0.0.1 - - [2020-01-28 02:37:13] "POST /webhook HTTP/1.1" 200 438 0.004258
+127.0.0.1 - - [2020-01-28 03:09:46] "POST /webhook HTTP/1.1" 200 438 0.004583
+127.0.0.1 - - [2020-01-28 08:00:07] "POST /webhook HTTP/1.1" 200 435 0.011448
+127.0.0.1 - - [2020-01-28 10:44:18] "POST /webhook HTTP/1.1" 200 438 0.003816
+127.0.0.1 - - [2020-01-28 10:45:04] "POST /webhook HTTP/1.1" 200 439 0.004999
+127.0.0.1 - - [2020-01-28 10:46:35] "POST /webhook HTTP/1.1" 200 435 0.004773
+127.0.0.1 - - [2020-01-28 10:46:42] "POST /webhook HTTP/1.1" 200 434 0.004692
+127.0.0.1 - - [2020-01-28 10:46:48] "POST /webhook HTTP/1.1" 200 435 0.004791
+127.0.0.1 - - [2020-01-28 10:51:58] "POST /webhook HTTP/1.1" 200 440 0.005225
+127.0.0.1 - - [2020-01-28 10:52:04] "POST /webhook HTTP/1.1" 200 435 0.005102
+127.0.0.1 - - [2020-01-28 11:09:27] "POST /webhook HTTP/1.1" 200 440 0.005349
+127.0.0.1 - - [2020-01-28 11:14:09] "POST /webhook HTTP/1.1" 200 440 0.005369
+127.0.0.1 - - [2020-01-28 11:17:16] "POST /webhook HTTP/1.1" 200 405 0.005523
+127.0.0.1 - - [2020-01-28 11:17:24] "POST /webhook HTTP/1.1" 200 405 0.005454
+127.0.0.1 - - [2020-01-28 11:17:33] "POST /webhook HTTP/1.1" 200 405 0.005550
+127.0.0.1 - - [2020-01-28 11:17:38] "POST /webhook HTTP/1.1" 200 405 0.005520
+127.0.0.1 - - [2020-01-28 11:20:42] "POST /webhook HTTP/1.1" 200 440 0.013120
+127.0.0.1 - - [2020-01-28 11:21:48] "POST /webhook HTTP/1.1" 200 435 0.005920
+127.0.0.1 - - [2020-01-28 11:21:55] "POST /webhook HTTP/1.1" 200 405 0.005958
+127.0.0.1 - - [2020-01-28 11:22:14] "POST /webhook HTTP/1.1" 200 405 0.005680
+127.0.0.1 - - [2020-01-28 11:23:04] "POST /webhook HTTP/1.1" 200 405 0.005930
+127.0.0.1 - - [2020-01-28 11:23:08] "POST /webhook HTTP/1.1" 200 435 0.005948
+127.0.0.1 - - [2020-01-28 11:23:10] "POST /webhook HTTP/1.1" 200 434 0.005939
+127.0.0.1 - - [2020-01-28 11:23:15] "POST /webhook HTTP/1.1" 200 436 0.006172
+127.0.0.1 - - [2020-01-28 11:23:19] "POST /webhook HTTP/1.1" 200 435 0.005868
+127.0.0.1 - - [2020-01-28 11:23:19] "POST /webhook HTTP/1.1" 200 435 0.006147
+127.0.0.1 - - [2020-01-28 11:23:21] "POST /webhook HTTP/1.1" 200 435 0.006428
+127.0.0.1 - - [2020-01-28 11:23:25] "POST /webhook HTTP/1.1" 200 435 0.006494
+127.0.0.1 - - [2020-01-28 11:23:25] "POST /webhook HTTP/1.1" 200 405 0.006544
+127.0.0.1 - - [2020-01-28 11:23:26] "POST /webhook HTTP/1.1" 200 405 0.005143
+127.0.0.1 - - [2020-01-28 11:23:29] "POST /webhook HTTP/1.1" 200 435 0.005316
+127.0.0.1 - - [2020-01-28 11:23:30] "POST /webhook HTTP/1.1" 200 405 0.006317
+127.0.0.1 - - [2020-01-28 11:23:32] "POST /webhook HTTP/1.1" 200 435 0.006262
+127.0.0.1 - - [2020-01-28 11:23:33] "POST /webhook HTTP/1.1" 200 405 0.006753
+127.0.0.1 - - [2020-01-28 11:23:35] "POST /webhook HTTP/1.1" 200 439 0.006783
+127.0.0.1 - - [2020-01-28 11:23:36] "POST /webhook HTTP/1.1" 200 405 0.006782
+127.0.0.1 - - [2020-01-28 11:23:37] "POST /webhook HTTP/1.1" 200 434 0.006557
+127.0.0.1 - - [2020-01-28 11:23:51] "POST /webhook HTTP/1.1" 200 434 0.006573
+127.0.0.1 - - [2020-01-28 11:23:52] "POST /webhook HTTP/1.1" 200 440 0.006713
+127.0.0.1 - - [2020-01-28 11:23:53] "POST /webhook HTTP/1.1" 200 405 0.006946
+127.0.0.1 - - [2020-01-28 11:23:54] "POST /webhook HTTP/1.1" 200 435 0.006707
+127.0.0.1 - - [2020-01-28 11:23:58] "POST /webhook HTTP/1.1" 200 434 0.007014
+127.0.0.1 - - [2020-01-28 11:24:04] "POST /webhook HTTP/1.1" 200 436 0.006954
+127.0.0.1 - - [2020-01-28 11:24:06] "POST /webhook HTTP/1.1" 200 435 0.006938
+127.0.0.1 - - [2020-01-28 11:24:07] "POST /webhook HTTP/1.1" 200 434 0.007283
+127.0.0.1 - - [2020-01-28 11:24:15] "POST /webhook HTTP/1.1" 200 434 0.007565
+127.0.0.1 - - [2020-01-28 11:24:16] "POST /webhook HTTP/1.1" 200 435 0.007709
+127.0.0.1 - - [2020-01-28 11:24:23] "POST /webhook HTTP/1.1" 200 439 0.007468
+127.0.0.1 - - [2020-01-28 11:24:26] "POST /webhook HTTP/1.1" 200 435 0.007122
+127.0.0.1 - - [2020-01-28 11:24:34] "POST /webhook HTTP/1.1" 200 435 0.007204
+127.0.0.1 - - [2020-01-28 11:24:34] "POST /webhook HTTP/1.1" 200 405 0.007385
+127.0.0.1 - - [2020-01-28 11:24:38] "POST /webhook HTTP/1.1" 200 435 0.007673
+127.0.0.1 - - [2020-01-28 11:24:46] "POST /webhook HTTP/1.1" 200 434 0.006069
+127.0.0.1 - - [2020-01-28 11:25:06] "POST /webhook HTTP/1.1" 200 436 0.007423
+127.0.0.1 - - [2020-01-28 11:25:18] "POST /webhook HTTP/1.1" 200 440 0.008211
+127.0.0.1 - - [2020-01-28 11:25:25] "POST /webhook HTTP/1.1" 200 435 0.007668
+127.0.0.1 - - [2020-01-28 11:25:27] "POST /webhook HTTP/1.1" 200 435 0.006061
+127.0.0.1 - - [2020-01-28 11:25:34] "POST /webhook HTTP/1.1" 200 435 0.007729
+127.0.0.1 - - [2020-01-28 11:25:36] "POST /webhook HTTP/1.1" 200 436 0.008145
+127.0.0.1 - - [2020-01-28 11:25:41] "POST /webhook HTTP/1.1" 200 439 0.008059
+127.0.0.1 - - [2020-01-28 11:25:52] "POST /webhook HTTP/1.1" 200 434 0.008020
+127.0.0.1 - - [2020-01-28 11:25:56] "POST /webhook HTTP/1.1" 200 405 0.007940
+127.0.0.1 - - [2020-01-28 11:26:21] "POST /webhook HTTP/1.1" 200 405 0.008196
+127.0.0.1 - - [2020-01-28 11:26:25] "POST /webhook HTTP/1.1" 200 435 0.008097
+127.0.0.1 - - [2020-01-28 11:26:26] "POST /webhook HTTP/1.1" 200 434 0.006358
+127.0.0.1 - - [2020-01-28 11:26:31] "POST /webhook HTTP/1.1" 200 435 0.007945
+127.0.0.1 - - [2020-01-28 11:26:39] "POST /webhook HTTP/1.1" 200 434 0.006460
+127.0.0.1 - - [2020-01-28 11:26:41] "POST /webhook HTTP/1.1" 200 405 0.008636
+127.0.0.1 - - [2020-01-28 11:26:49] "POST /webhook HTTP/1.1" 200 405 0.008398
+127.0.0.1 - - [2020-01-28 11:26:55] "POST /webhook HTTP/1.1" 200 435 0.008298
+127.0.0.1 - - [2020-01-28 11:27:02] "POST /webhook HTTP/1.1" 200 435 0.006781
+127.0.0.1 - - [2020-01-28 11:27:10] "POST /webhook HTTP/1.1" 200 405 0.007312
+127.0.0.1 - - [2020-01-28 11:27:15] "POST /webhook HTTP/1.1" 200 405 0.008397
+127.0.0.1 - - [2020-01-28 11:27:23] "POST /webhook HTTP/1.1" 200 440 0.008690
+127.0.0.1 - - [2020-01-28 11:27:35] "POST /webhook HTTP/1.1" 200 405 0.011545
+127.0.0.1 - - [2020-01-28 11:27:43] "POST /webhook HTTP/1.1" 200 434 0.008719
+127.0.0.1 - - [2020-01-28 11:27:59] "POST /webhook HTTP/1.1" 200 436 0.006917
+127.0.0.1 - - [2020-01-28 11:28:04] "POST /webhook HTTP/1.1" 200 435 0.008897
+127.0.0.1 - - [2020-01-28 11:28:08] "POST /webhook HTTP/1.1" 200 439 0.007284
+127.0.0.1 - - [2020-01-28 11:28:22] "POST /webhook HTTP/1.1" 200 440 0.009193
+127.0.0.1 - - [2020-01-28 11:28:40] "POST /webhook HTTP/1.1" 200 405 0.008789
+127.0.0.1 - - [2020-01-28 11:28:47] "POST /webhook HTTP/1.1" 200 434 0.009284
+127.0.0.1 - - [2020-01-28 11:29:51] "POST /webhook HTTP/1.1" 200 440 0.007025
+127.0.0.1 - - [2020-01-28 11:30:03] "POST /webhook HTTP/1.1" 200 435 0.011441
+127.0.0.1 - - [2020-01-28 11:30:09] "POST /webhook HTTP/1.1" 200 434 0.012098
+127.0.0.1 - - [2020-01-28 11:30:13] "POST /webhook HTTP/1.1" 200 434 0.013203
+127.0.0.1 - - [2020-01-28 11:32:14] "POST /webhook HTTP/1.1" 200 405 0.009129
+127.0.0.1 - - [2020-01-28 11:32:20] "POST /webhook HTTP/1.1" 200 434 0.009176
+127.0.0.1 - - [2020-01-28 11:32:49] "POST /webhook HTTP/1.1" 200 434 0.007315
+127.0.0.1 - - [2020-01-28 11:32:56] "POST /webhook HTTP/1.1" 200 405 0.007839
+127.0.0.1 - - [2020-01-28 11:33:03] "POST /webhook HTTP/1.1" 200 440 0.009442
+127.0.0.1 - - [2020-01-28 11:33:05] "POST /webhook HTTP/1.1" 200 435 0.009747
+127.0.0.1 - - [2020-01-28 11:33:10] "POST /webhook HTTP/1.1" 200 439 0.009626
+127.0.0.1 - - [2020-01-28 11:33:10] "POST /webhook HTTP/1.1" 200 435 0.009432
+127.0.0.1 - - [2020-01-28 11:33:16] "POST /webhook HTTP/1.1" 200 435 0.010066
+127.0.0.1 - - [2020-01-28 11:33:18] "POST /webhook HTTP/1.1" 200 435 0.010127
+127.0.0.1 - - [2020-01-28 11:33:24] "POST /webhook HTTP/1.1" 200 405 0.010052
+127.0.0.1 - - [2020-01-28 11:33:27] "POST /webhook HTTP/1.1" 200 435 0.009690
+127.0.0.1 - - [2020-01-28 11:33:34] "POST /webhook HTTP/1.1" 200 436 0.007680
+127.0.0.1 - - [2020-01-28 11:33:37] "POST /webhook HTTP/1.1" 200 435 0.009955
+127.0.0.1 - - [2020-01-28 11:33:39] "POST /webhook HTTP/1.1" 200 405 0.009950
+127.0.0.1 - - [2020-01-28 11:33:40] "POST /webhook HTTP/1.1" 200 434 0.010095
+127.0.0.1 - - [2020-01-28 11:33:52] "POST /webhook HTTP/1.1" 200 435 0.007696
+127.0.0.1 - - [2020-01-28 11:34:29] "POST /webhook HTTP/1.1" 200 435 0.010002
+127.0.0.1 - - [2020-01-28 11:34:35] "POST /webhook HTTP/1.1" 200 435 0.009901
+127.0.0.1 - - [2020-01-28 11:34:36] "POST /webhook HTTP/1.1" 200 405 0.007810
+127.0.0.1 - - [2020-01-28 11:34:41] "POST /webhook HTTP/1.1" 200 434 0.010572
+127.0.0.1 - - [2020-01-28 11:34:44] "POST /webhook HTTP/1.1" 200 435 0.007965
+127.0.0.1 - - [2020-01-28 11:34:49] "POST /webhook HTTP/1.1" 200 435 0.010869
+127.0.0.1 - - [2020-01-28 11:34:57] "POST /webhook HTTP/1.1" 200 435 0.010987
+127.0.0.1 - - [2020-01-28 11:35:33] "POST /webhook HTTP/1.1" 200 436 0.010262
+127.0.0.1 - - [2020-01-28 11:35:43] "POST /webhook HTTP/1.1" 200 435 0.010265
+127.0.0.1 - - [2020-01-28 11:35:45] "POST /webhook HTTP/1.1" 200 436 0.008402
+127.0.0.1 - - [2020-01-28 11:35:52] "POST /webhook HTTP/1.1" 200 440 0.010537
+127.0.0.1 - - [2020-01-28 11:35:56] "POST /webhook HTTP/1.1" 200 440 0.010659
+127.0.0.1 - - [2020-01-28 11:36:00] "POST /webhook HTTP/1.1" 200 439 0.011037
+127.0.0.1 - - [2020-01-28 11:37:16] "POST /webhook HTTP/1.1" 200 405 0.011153
+127.0.0.1 - - [2020-01-28 11:38:39] "POST /webhook HTTP/1.1" 200 439 0.010786
+127.0.0.1 - - [2020-01-28 11:38:46] "POST /webhook HTTP/1.1" 200 434 0.011745
+127.0.0.1 - - [2020-01-28 11:38:49] "POST /webhook HTTP/1.1" 200 434 0.011043
+127.0.0.1 - - [2020-01-28 11:39:03] "POST /webhook HTTP/1.1" 200 405 0.015772
+127.0.0.1 - - [2020-01-28 11:39:06] "POST /webhook HTTP/1.1" 200 434 0.011031
+127.0.0.1 - - [2020-01-28 11:39:12] "POST /webhook HTTP/1.1" 200 441 0.009074
+127.0.0.1 - - [2020-01-28 11:39:17] "POST /webhook HTTP/1.1" 200 435 0.008623
+127.0.0.1 - - [2020-01-28 11:39:23] "POST /webhook HTTP/1.1" 200 434 0.010777
+127.0.0.1 - - [2020-01-28 11:41:03] "POST /webhook HTTP/1.1" 200 441 0.010983
+127.0.0.1 - - [2020-01-28 11:41:11] "POST /webhook HTTP/1.1" 200 435 0.010964
+127.0.0.1 - - [2020-01-28 11:41:11] "POST /webhook HTTP/1.1" 200 434 0.011963
+127.0.0.1 - - [2020-01-28 11:41:25] "POST /webhook HTTP/1.1" 200 405 0.011040
+127.0.0.1 - - [2020-01-28 11:41:32] "POST /webhook HTTP/1.1" 200 405 0.012071
+127.0.0.1 - - [2020-01-28 11:41:39] "POST /webhook HTTP/1.1" 200 435 0.012120
+127.0.0.1 - - [2020-01-28 11:41:51] "POST /webhook HTTP/1.1" 200 405 0.011960
+127.0.0.1 - - [2020-01-28 11:41:52] "POST /webhook HTTP/1.1" 200 435 0.011728
+127.0.0.1 - - [2020-01-28 11:42:05] "POST /webhook HTTP/1.1" 200 436 0.011732
+127.0.0.1 - - [2020-01-28 11:42:12] "POST /webhook HTTP/1.1" 200 434 0.011937
+127.0.0.1 - - [2020-01-28 11:42:18] "POST /webhook HTTP/1.1" 200 436 0.011593
+127.0.0.1 - - [2020-01-28 11:42:23] "POST /webhook HTTP/1.1" 200 435 0.011701
+127.0.0.1 - - [2020-01-28 11:42:29] "POST /webhook HTTP/1.1" 200 405 0.011599
+127.0.0.1 - - [2020-01-28 11:45:20] "POST /webhook HTTP/1.1" 200 435 0.011566
+127.0.0.1 - - [2020-01-28 11:45:26] "POST /webhook HTTP/1.1" 200 434 0.012070
+127.0.0.1 - - [2020-01-28 11:45:38] "POST /webhook HTTP/1.1" 200 435 0.011758
+127.0.0.1 - - [2020-01-28 11:47:27] "POST /webhook HTTP/1.1" 200 435 0.012092
+127.0.0.1 - - [2020-01-28 11:47:44] "POST /webhook HTTP/1.1" 200 405 0.011950
+127.0.0.1 - - [2020-01-28 11:47:52] "POST /webhook HTTP/1.1" 200 434 0.014304
+127.0.0.1 - - [2020-01-28 11:47:56] "POST /webhook HTTP/1.1" 200 434 0.011998
+127.0.0.1 - - [2020-01-28 11:48:03] "POST /webhook HTTP/1.1" 200 434 0.012610
+127.0.0.1 - - [2020-01-28 11:48:14] "POST /webhook HTTP/1.1" 200 434 0.012715
+127.0.0.1 - - [2020-01-28 11:49:48] "POST /webhook HTTP/1.1" 200 434 0.012521
+127.0.0.1 - - [2020-01-28 11:49:49] "POST /webhook HTTP/1.1" 200 434 0.012480
+127.0.0.1 - - [2020-01-28 11:49:57] "POST /webhook HTTP/1.1" 200 435 0.012494
+127.0.0.1 - - [2020-01-28 11:50:04] "POST /webhook HTTP/1.1" 200 436 0.014967
+127.0.0.1 - - [2020-01-28 11:50:09] "POST /webhook HTTP/1.1" 200 434 0.015051
+127.0.0.1 - - [2020-01-28 11:50:21] "POST /webhook HTTP/1.1" 200 434 0.014895
+127.0.0.1 - - [2020-01-28 11:51:33] "POST /webhook HTTP/1.1" 200 435 0.012405
+127.0.0.1 - - [2020-01-28 11:51:43] "POST /webhook HTTP/1.1" 200 436 0.013267
+127.0.0.1 - - [2020-01-28 11:53:19] "POST /webhook HTTP/1.1" 200 434 0.012557
+127.0.0.1 - - [2020-01-28 11:53:31] "POST /webhook HTTP/1.1" 200 434 0.012613
+127.0.0.1 - - [2020-01-28 11:55:02] "POST /webhook HTTP/1.1" 200 405 0.012907
+127.0.0.1 - - [2020-01-28 11:55:06] "POST /webhook HTTP/1.1" 200 434 0.013612
+127.0.0.1 - - [2020-01-28 11:55:34] "POST /webhook HTTP/1.1" 200 435 0.127567
+127.0.0.1 - - [2020-01-28 11:58:34] "POST /webhook HTTP/1.1" 200 434 0.013078
+127.0.0.1 - - [2020-01-28 11:58:39] "POST /webhook HTTP/1.1" 200 435 0.013222
+127.0.0.1 - - [2020-01-28 11:58:45] "POST /webhook HTTP/1.1" 200 434 0.012944
+127.0.0.1 - - [2020-01-28 11:59:06] "POST /webhook HTTP/1.1" 200 434 0.014233
+127.0.0.1 - - [2020-01-28 11:59:45] "POST /webhook HTTP/1.1" 200 436 0.009943
+127.0.0.1 - - [2020-01-28 11:59:53] "POST /webhook HTTP/1.1" 200 435 0.013123
+127.0.0.1 - - [2020-01-28 12:00:08] "POST /webhook HTTP/1.1" 200 405 0.016924
+127.0.0.1 - - [2020-01-28 12:01:44] "POST /webhook HTTP/1.1" 200 434 0.012893
+127.0.0.1 - - [2020-01-28 12:01:54] "POST /webhook HTTP/1.1" 200 435 0.012964
+127.0.0.1 - - [2020-01-28 12:02:06] "POST /webhook HTTP/1.1" 200 435 0.013835
+127.0.0.1 - - [2020-01-28 12:02:08] "POST /webhook HTTP/1.1" 200 435 0.013250
+127.0.0.1 - - [2020-01-28 12:02:16] "POST /webhook HTTP/1.1" 200 434 0.013464
+127.0.0.1 - - [2020-01-28 12:02:45] "POST /webhook HTTP/1.1" 200 440 0.013659
+127.0.0.1 - - [2020-01-28 12:02:51] "POST /webhook HTTP/1.1" 200 435 0.013288
+127.0.0.1 - - [2020-01-28 12:03:07] "POST /webhook HTTP/1.1" 200 435 0.013389
+127.0.0.1 - - [2020-01-28 12:08:47] "POST /webhook HTTP/1.1" 200 405 0.013510
+127.0.0.1 - - [2020-01-28 12:13:47] "POST /webhook HTTP/1.1" 200 436 0.014515
+127.0.0.1 - - [2020-01-28 12:13:56] "POST /webhook HTTP/1.1" 200 405 0.013609
+127.0.0.1 - - [2020-01-28 12:14:02] "POST /webhook HTTP/1.1" 200 405 0.014109
+127.0.0.1 - - [2020-01-28 12:14:32] "POST /webhook HTTP/1.1" 200 436 0.014198
+127.0.0.1 - - [2020-01-28 12:14:41] "POST /webhook HTTP/1.1" 200 435 0.013601
+127.0.0.1 - - [2020-01-28 12:15:17] "POST /webhook HTTP/1.1" 200 436 0.014144
+127.0.0.1 - - [2020-01-28 12:15:33] "POST /webhook HTTP/1.1" 200 435 0.014520
+127.0.0.1 - - [2020-01-28 12:15:45] "POST /webhook HTTP/1.1" 200 405 0.014087
+127.0.0.1 - - [2020-01-28 12:15:52] "POST /webhook HTTP/1.1" 200 435 0.010783
+127.0.0.1 - - [2020-01-28 12:16:03] "POST /webhook HTTP/1.1" 200 405 0.015151
+127.0.0.1 - - [2020-01-28 12:16:44] "POST /webhook HTTP/1.1" 200 435 0.014380
+127.0.0.1 - - [2020-01-28 12:21:56] "POST /webhook HTTP/1.1" 200 436 0.014166
+127.0.0.1 - - [2020-01-28 12:28:50] "POST /webhook HTTP/1.1" 200 436 0.014007
+127.0.0.1 - - [2020-01-28 12:29:01] "POST /webhook HTTP/1.1" 200 434 0.016922
+127.0.0.1 - - [2020-01-28 12:29:13] "POST /webhook HTTP/1.1" 200 435 0.014611
+127.0.0.1 - - [2020-01-28 12:29:20] "POST /webhook HTTP/1.1" 200 434 0.014874
+127.0.0.1 - - [2020-01-28 12:36:52] "POST /webhook HTTP/1.1" 200 436 0.014322
+127.0.0.1 - - [2020-01-28 12:58:27] "POST /webhook HTTP/1.1" 200 434 0.014715
+127.0.0.1 - - [2020-01-28 12:58:37] "POST /webhook HTTP/1.1" 200 434 0.011359
+127.0.0.1 - - [2020-01-28 13:13:18] "POST /webhook HTTP/1.1" 200 434 0.014423
+127.0.0.1 - - [2020-01-28 13:14:26] "POST /webhook HTTP/1.1" 200 405 0.014700
+127.0.0.1 - - [2020-01-28 13:14:32] "POST /webhook HTTP/1.1" 200 434 0.015106
+127.0.0.1 - - [2020-01-28 13:14:39] "POST /webhook HTTP/1.1" 200 439 0.014493
+127.0.0.1 - - [2020-01-28 13:21:49] "POST /webhook HTTP/1.1" 200 436 0.015267
+127.0.0.1 - - [2020-01-28 13:26:23] "POST /webhook HTTP/1.1" 200 435 0.017972
+127.0.0.1 - - [2020-01-28 13:28:02] "POST /webhook HTTP/1.1" 200 435 0.014928
+127.0.0.1 - - [2020-01-28 13:28:22] "POST /webhook HTTP/1.1" 200 435 0.014776
+127.0.0.1 - - [2020-01-28 13:29:48] "POST /webhook HTTP/1.1" 200 435 0.015394
+127.0.0.1 - - [2020-01-28 13:29:57] "POST /webhook HTTP/1.1" 200 435 0.015284
+127.0.0.1 - - [2020-01-28 13:30:04] "POST /webhook HTTP/1.1" 200 435 0.018206
+127.0.0.1 - - [2020-01-28 13:30:45] "POST /webhook HTTP/1.1" 200 440 0.013455
+127.0.0.1 - - [2020-01-28 13:30:59] "POST /webhook HTTP/1.1" 200 435 0.013275
+127.0.0.1 - - [2020-01-28 13:33:18] "POST /webhook HTTP/1.1" 200 405 0.015659
+127.0.0.1 - - [2020-01-28 13:33:20] "POST /webhook HTTP/1.1" 200 435 0.015635
+127.0.0.1 - - [2020-01-28 13:33:23] "POST /webhook HTTP/1.1" 200 435 0.016125
+127.0.0.1 - - [2020-01-28 13:40:04] "POST /webhook HTTP/1.1" 200 436 0.017696
+127.0.0.1 - - [2020-01-28 13:40:14] "POST /webhook HTTP/1.1" 200 435 0.018211
+127.0.0.1 - - [2020-01-28 13:40:25] "POST /webhook HTTP/1.1" 200 440 0.017788
+127.0.0.1 - - [2020-01-28 13:40:29] "POST /webhook HTTP/1.1" 200 439 0.018325
+127.0.0.1 - - [2020-01-28 13:41:08] "POST /webhook HTTP/1.1" 200 435 0.015595
+127.0.0.1 - - [2020-01-28 13:51:36] "POST /webhook HTTP/1.1" 200 405 0.016284
+127.0.0.1 - - [2020-01-28 13:51:38] "POST /webhook HTTP/1.1" 200 434 0.015577
+127.0.0.1 - - [2020-01-28 13:51:41] "POST /webhook HTTP/1.1" 200 434 0.015674
+127.0.0.1 - - [2020-01-28 13:51:48] "POST /webhook HTTP/1.1" 200 405 0.016153
+127.0.0.1 - - [2020-01-28 13:51:53] "POST /webhook HTTP/1.1" 200 405 0.015840
+127.0.0.1 - - [2020-01-28 13:52:01] "POST /webhook HTTP/1.1" 200 439 0.015547
+127.0.0.1 - - [2020-01-28 13:56:51] "POST /webhook HTTP/1.1" 200 405 0.015796
+127.0.0.1 - - [2020-01-28 13:56:55] "POST /webhook HTTP/1.1" 200 434 0.016281
+127.0.0.1 - - [2020-01-28 13:57:54] "POST /webhook HTTP/1.1" 200 439 0.015664
+127.0.0.1 - - [2020-01-28 13:58:02] "POST /webhook HTTP/1.1" 200 440 0.016258
+127.0.0.1 - - [2020-01-28 13:59:09] "POST /webhook HTTP/1.1" 200 435 0.016117
+127.0.0.1 - - [2020-01-28 13:59:13] "POST /webhook HTTP/1.1" 200 435 0.016306
+127.0.0.1 - - [2020-01-28 13:59:17] "POST /webhook HTTP/1.1" 200 435 0.016917
+127.0.0.1 - - [2020-01-28 13:59:23] "POST /webhook HTTP/1.1" 200 434 0.016602
+127.0.0.1 - - [2020-01-28 14:01:28] "POST /webhook HTTP/1.1" 200 435 0.016340
+127.0.0.1 - - [2020-01-28 14:05:20] "POST /webhook HTTP/1.1" 200 435 0.013830
+127.0.0.1 - - [2020-01-28 14:21:59] "POST /webhook HTTP/1.1" 200 434 0.016597
+127.0.0.1 - - [2020-01-28 14:22:18] "POST /webhook HTTP/1.1" 200 434 0.016187
+127.0.0.1 - - [2020-01-28 14:23:21] "POST /webhook HTTP/1.1" 200 434 0.016960
+127.0.0.1 - - [2020-01-28 14:23:31] "POST /webhook HTTP/1.1" 200 435 0.016457
+127.0.0.1 - - [2020-01-28 14:26:43] "POST /webhook HTTP/1.1" 200 435 0.017250
+127.0.0.1 - - [2020-01-28 15:03:19] "POST /webhook HTTP/1.1" 200 440 0.016773
+127.0.0.1 - - [2020-01-28 15:03:22] "POST /webhook HTTP/1.1" 200 439 0.016759
+127.0.0.1 - - [2020-01-28 15:03:27] "POST /webhook HTTP/1.1" 200 435 0.016738
+127.0.0.1 - - [2020-01-28 15:03:30] "POST /webhook HTTP/1.1" 200 436 0.017355
+127.0.0.1 - - [2020-01-28 15:03:34] "POST /webhook HTTP/1.1" 200 434 0.016482
+127.0.0.1 - - [2020-01-28 15:03:37] "POST /webhook HTTP/1.1" 200 435 0.016671
+127.0.0.1 - - [2020-01-28 15:03:44] "POST /webhook HTTP/1.1" 200 435 0.017001
+127.0.0.1 - - [2020-01-28 15:09:30] "POST /webhook HTTP/1.1" 200 405 0.017359
+127.0.0.1 - - [2020-01-28 15:23:19] "POST /webhook HTTP/1.1" 200 435 0.017842
+127.0.0.1 - - [2020-01-28 15:23:34] "POST /webhook HTTP/1.1" 200 435 0.017889
+127.0.0.1 - - [2020-01-28 15:23:40] "POST /webhook HTTP/1.1" 200 435 0.016987
+127.0.0.1 - - [2020-01-28 15:27:52] "POST /webhook HTTP/1.1" 200 405 0.018484
+127.0.0.1 - - [2020-01-28 15:27:56] "POST /webhook HTTP/1.1" 200 434 0.017727
+127.0.0.1 - - [2020-01-28 16:32:20] "POST /webhook HTTP/1.1" 200 434 0.017473
+127.0.0.1 - - [2020-01-28 16:32:28] "POST /webhook HTTP/1.1" 200 405 0.017498
+127.0.0.1 - - [2020-01-28 16:32:36] "POST /webhook HTTP/1.1" 200 434 0.018362
+127.0.0.1 - - [2020-01-28 16:32:46] "POST /webhook HTTP/1.1" 200 435 0.018156
+127.0.0.1 - - [2020-01-28 17:13:10] "POST /webhook HTTP/1.1" 200 440 0.018196
+127.0.0.1 - - [2020-01-28 17:13:17] "POST /webhook HTTP/1.1" 200 435 0.019059
+127.0.0.1 - - [2020-01-28 17:13:45] "POST /webhook HTTP/1.1" 200 405 0.017886
+127.0.0.1 - - [2020-01-28 17:30:56] "POST /webhook HTTP/1.1" 200 435 0.020116
+127.0.0.1 - - [2020-01-28 17:54:41] "POST /webhook HTTP/1.1" 200 441 0.013802
+127.0.0.1 - - [2020-01-28 17:55:19] "POST /webhook HTTP/1.1" 200 440 0.134879
+127.0.0.1 - - [2020-01-28 18:02:53] "POST /webhook HTTP/1.1" 200 434 0.018022
+127.0.0.1 - - [2020-01-28 19:00:50] "POST /webhook HTTP/1.1" 200 434 0.021333
+127.0.0.1 - - [2020-01-28 19:00:59] "POST /webhook HTTP/1.1" 200 405 0.022397
+127.0.0.1 - - [2020-01-28 19:01:04] "POST /webhook HTTP/1.1" 200 435 0.019802
+127.0.0.1 - - [2020-01-28 19:01:08] "POST /webhook HTTP/1.1" 200 439 0.019952
+127.0.0.1 - - [2020-01-28 19:01:16] "POST /webhook HTTP/1.1" 200 435 0.018427
+127.0.0.1 - - [2020-01-28 21:34:24] "POST /webhook HTTP/1.1" 200 439 0.018452
+127.0.0.1 - - [2020-01-28 22:07:03] "POST /webhook HTTP/1.1" 200 434 0.018520
+127.0.0.1 - - [2020-01-28 22:07:06] "POST /webhook HTTP/1.1" 200 435 0.018149
+127.0.0.1 - - [2020-01-28 22:07:09] "POST /webhook HTTP/1.1" 200 440 0.019355
+127.0.0.1 - - [2020-01-28 22:07:11] "POST /webhook HTTP/1.1" 200 435 0.019939
+127.0.0.1 - - [2020-01-28 22:07:29] "POST /webhook HTTP/1.1" 200 435 0.019173
+127.0.0.1 - - [2020-01-28 22:07:38] "POST /webhook HTTP/1.1" 200 435 0.018566
+127.0.0.1 - - [2020-01-28 22:07:47] "POST /webhook HTTP/1.1" 200 434 0.018358
+127.0.0.1 - - [2020-01-28 22:07:56] "POST /webhook HTTP/1.1" 200 434 0.018805
+127.0.0.1 - - [2020-01-28 22:08:26] "POST /webhook HTTP/1.1" 200 434 0.018914
+127.0.0.1 - - [2020-01-28 23:28:56] "POST /webhook HTTP/1.1" 200 436 0.019817
+127.0.0.1 - - [2020-01-28 23:29:04] "POST /webhook HTTP/1.1" 200 436 0.018632
+127.0.0.1 - - [2020-01-29 01:20:33] "POST /webhook HTTP/1.1" 200 405 0.022856
+127.0.0.1 - - [2020-01-29 01:20:43] "POST /webhook HTTP/1.1" 200 405 0.022511
+127.0.0.1 - - [2020-01-29 01:21:18] "POST /webhook HTTP/1.1" 200 405 0.019664
+127.0.0.1 - - [2020-01-29 05:08:35] "POST /webhook HTTP/1.1" 200 434 0.020018
+127.0.0.1 - - [2020-01-29 05:08:47] "POST /webhook HTTP/1.1" 200 435 0.019530
+127.0.0.1 - - [2020-01-29 05:08:54] "POST /webhook HTTP/1.1" 200 435 0.020793
+127.0.0.1 - - [2020-01-29 05:09:02] "POST /webhook HTTP/1.1" 200 434 0.020020
+127.0.0.1 - - [2020-01-29 05:09:09] "POST /webhook HTTP/1.1" 200 435 0.019846
+127.0.0.1 - - [2020-01-29 05:09:14] "POST /webhook HTTP/1.1" 200 435 0.019798
+127.0.0.1 - - [2020-01-29 05:09:26] "POST /webhook HTTP/1.1" 200 439 0.020792
+127.0.0.1 - - [2020-01-29 05:09:40] "POST /webhook HTTP/1.1" 200 439 0.020143
+127.0.0.1 - - [2020-01-29 05:09:50] "POST /webhook HTTP/1.1" 200 405 0.020769
+127.0.0.1 - - [2020-01-29 07:39:23] "POST /webhook HTTP/1.1" 200 405 0.019888
+127.0.0.1 - - [2020-01-29 07:39:29] "POST /webhook HTTP/1.1" 200 435 0.020318
+127.0.0.1 - - [2020-01-29 07:39:39] "POST /webhook HTTP/1.1" 200 405 0.020036
+127.0.0.1 - - [2020-01-29 07:39:45] "POST /webhook HTTP/1.1" 200 434 0.021154
+127.0.0.1 - - [2020-01-29 08:46:07] "POST /webhook HTTP/1.1" 200 435 0.015440
+127.0.0.1 - - [2020-01-29 08:46:15] "POST /webhook HTTP/1.1" 200 435 0.032467
+127.0.0.1 - - [2020-01-29 08:50:25] "POST /webhook HTTP/1.1" 200 436 0.023471
+127.0.0.1 - - [2020-01-29 08:50:35] "POST /webhook HTTP/1.1" 200 434 0.017304
+127.0.0.1 - - [2020-01-29 08:50:43] "POST /webhook HTTP/1.1" 200 405 0.017606
+127.0.0.1 - - [2020-01-29 09:45:29] "POST /webhook HTTP/1.1" 200 435 0.016458
+127.0.0.1 - - [2020-01-29 09:45:37] "POST /webhook HTTP/1.1" 200 435 0.021282
+127.0.0.1 - - [2020-01-29 11:51:22] "POST /webhook HTTP/1.1" 200 435 0.022223
+127.0.0.1 - - [2020-01-29 11:51:54] "POST /webhook HTTP/1.1" 200 436 0.015913
+127.0.0.1 - - [2020-01-29 11:51:59] "POST /webhook HTTP/1.1" 200 436 0.035455
+127.0.0.1 - - [2020-01-29 11:52:46] "POST /webhook HTTP/1.1" 200 436 0.021343
+127.0.0.1 - - [2020-01-29 12:28:52] "POST /webhook HTTP/1.1" 200 434 0.020790
+127.0.0.1 - - [2020-01-29 12:28:57] "POST /webhook HTTP/1.1" 200 436 0.016223
+127.0.0.1 - - [2020-01-29 12:57:31] "POST /webhook HTTP/1.1" 200 434 0.021542
+127.0.0.1 - - [2020-01-29 12:57:38] "POST /webhook HTTP/1.1" 200 405 0.020803
+127.0.0.1 - - [2020-01-29 12:57:43] "POST /webhook HTTP/1.1" 200 434 0.022580
+127.0.0.1 - - [2020-01-29 14:17:14] "POST /webhook HTTP/1.1" 200 435 0.022868
+127.0.0.1 - - [2020-01-29 14:17:27] "POST /webhook HTTP/1.1" 200 436 0.020933
+127.0.0.1 - - [2020-01-29 14:17:40] "POST /webhook HTTP/1.1" 200 405 0.016439
+127.0.0.1 - - [2020-01-29 14:17:47] "POST /webhook HTTP/1.1" 200 435 0.130795
+127.0.0.1 - - [2020-01-29 17:34:27] "POST /webhook HTTP/1.1" 200 434 0.021766
+127.0.0.1 - - [2020-01-29 17:34:38] "POST /webhook HTTP/1.1" 200 434 0.021042
+127.0.0.1 - - [2020-01-29 17:35:40] "POST /webhook HTTP/1.1" 200 434 0.021136

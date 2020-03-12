@@ -6,7 +6,7 @@ from datetime import datetime
 data_store={}
 flag=True
 def init_data():
-    f= json.load(open('dingxiangyuan.json'))
+    f= json.load(open('dingxiangyuan'))
     for i in f['data']['getAreaStat']:
         adress = i['provinceName'].replace('市','')
         adress = adress.replace('省','')
@@ -16,7 +16,7 @@ def init_data():
         data_store[adress]['治愈']=i['curedCount']
         data_store[adress]['死亡']=i['deadCount']
         for j in i['cities']:
-            adress = i['cityName'].replace('市','')
+            adress = j['cityName'].replace('市','')
             adress = adress.replace('省','')
             data_store[adress] = defaultdict(str)
             data_store[adress]['确诊']=j['confirmedCount']
@@ -41,12 +41,12 @@ def get_detail_info(address):
         ds = init_data()
     if address=='general':
         try:
-            return "整体的情况是：确诊：{}, 疑似：{}, 治愈：{}, 死亡：{}。请不要紧张，一切都会好的".format(ds[address]['确诊'], ds[address]['疑似'], ds[address]['治愈'],ds[address]['死亡'])
+            return "(由于某些原因，本数据已经停止更新，请到官方渠道查询)整体的情况是：确诊：{}, 疑似：{}, 治愈：{}, 死亡：{}。请不要紧张，一切都会好的".format(ds[address]['确诊'], ds[address]['疑似'], ds[address]['治愈'],ds[address]['死亡'])
         except:
             return "暂时没有你所查找的信息，请换一种说法说出你要查询的城市名称"
 
     try:
-        return "{} 的情况是：确诊：{}, 疑似：{}, 治愈：{}, 死亡：{}。请不要紧张，一切都会好的".format(address, ds[address]['确诊'], ds[address]['疑似'], ds[address]['治愈'],ds[address]['死亡'])
+        return "(由于某些原因，本数据已经停止更新，请到官方渠道查询){} 的情况是：确诊：{}, 疑似：{}, 治愈：{}, 死亡：{}。请不要紧张，一切都会好的".format(address, ds[address]['确诊'], ds[address]['疑似'], ds[address]['治愈'],ds[address]['死亡'])
     except:
         return "暂时没有你所查找的信息，请换一种说法说出你要查询的城市名称"
 

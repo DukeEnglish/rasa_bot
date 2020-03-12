@@ -4,13 +4,11 @@
 
 ## general disease 
 * disease
-  - utter_working_on_it
   - action_report_general_disease
-  - utter_bot_ending
+  - utter_report_disease
 
 ## simple path
 * disease_address{"address": "上海"}
-  - utter_working_on_it
   - action_report_disease
   - utter_report_disease
 
@@ -22,7 +20,6 @@
 * greet
   - utter_greet
 * disease_address{"address": "上海"}
-  - utter_working_on_it
   - action_report_disease
   - utter_report_disease
 
